@@ -1,0 +1,53 @@
+$themeColor: rgba(152, 57, 255, 0.5);
+
+header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  div.left-part {
+    // border: 2px solid red;
+    flex: 2 1 400px; // 分割區塊
+    display: flex;
+    align-items: center;
+
+    div.img {
+      img {
+        width: 6vw;
+        height: 6vw;
+      }
+    }
+
+    div.title {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  div.right-part {
+    // border: 2px solid blue;
+    flex: 5 1 500px; // 分割區塊
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+          font-size: 1.5rem;
+          font-weight: bold;
+          // 滑鼠游標上去會變色
+          a {
+            transition: all 0.3s ease-in-out;
+            padding-bottom: 0.3rem;
+            &:hover {
+              color: $themeColor;
+              border-bottom: 3px solid $themeColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

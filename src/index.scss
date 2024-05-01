@@ -1,0 +1,26 @@
+/* 套用在全局的樣式設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
