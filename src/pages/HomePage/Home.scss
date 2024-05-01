@@ -1,0 +1,34 @@
+section.slide-img {
+  //   border: 2px solid red;
+  width: 100%;
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.75s ease;
+  position: relative;
+  z-index: 0;
+
+  div.filter {
+    width: 100%;
+    min-height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  div.travel-description {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #fff;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+}
