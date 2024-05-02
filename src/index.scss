@@ -15,6 +15,16 @@ h6 {
 }
 
 body {
+  position: relative;
+  img.fixed-image {
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: -100;
+    top: 0;
+    left: 0;
+  }
+
   a {
     text-decoration: none;
     color: black;

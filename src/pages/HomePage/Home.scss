@@ -74,3 +74,42 @@ section.play-theme {
     }
   }
 }
+
+// -- 介紹區塊 --
+section.empty-container {
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+
+// -- 日本地理位置 --
+section.google-map {
+  min-height: 40vh;
+  background-color: #fff;
+  div.location-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    h3 {
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: center;
+      margin: 1rem;
+      font-size: 1.25rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}

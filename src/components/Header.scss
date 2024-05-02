@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
 
-    div.img {
+    div.logo-img {
       img {
         width: 6vw;
         height: 6vw;
@@ -45,6 +45,32 @@ header {
               color: $themeColor;
               border-bottom: 3px solid $themeColor;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+// RWD設計 700大小以下的設計
+@media screen and (max-width: 700px) {
+  header {
+    div.left-part {
+      flex-direction: column;
+      div.logo-img {
+        img {
+          width: 50vw;
+          height: 50vw;
+        }
+      }
+    }
+
+    div.right-part {
+      nav {
+        ul {
+          flex-direction: column;
+          li {
+            margin: 0.5rem 0;
           }
         }
       }
