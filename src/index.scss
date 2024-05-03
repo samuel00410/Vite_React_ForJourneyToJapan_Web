@@ -1,4 +1,12 @@
 /* 套用在全局的樣式設定 */
+:root {
+  // 背景顏色和字體顏色(明亮主題)
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  // 背景顏色和字體顏色(暗色主題)
+  --background-color-dark: #333333;
+  --text-color-dark: #ffffff;
+}
 
 $themeColor: rgba(152, 57, 255, 0.5);
 
@@ -22,6 +30,7 @@ body {
   img.fixed-image {
     min-height: 100vh;
     position: fixed;
+
     width: 100%;
     z-index: -100;
     top: 0;

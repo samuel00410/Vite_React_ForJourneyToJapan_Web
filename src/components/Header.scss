@@ -1,7 +1,16 @@
 $themeColor: rgba(152, 57, 255, 0.5);
 
 header {
-  background-color: white;
+  transition: all 0.3s ease-in-out;
+  &.header-dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+
+  &.header-light {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -45,6 +54,15 @@ header {
           a {
             transition: all 0.3s ease-in-out;
             padding-bottom: 0.3rem;
+            color: var(--text-color-light);
+            &.link-dark {
+              color: var(--text-color-dark);
+            }
+
+            &.link-light {
+              color: var(--text-color-light);
+            }
+
             &:hover {
               color: $themeColor;
               border-bottom: 3px solid $themeColor;

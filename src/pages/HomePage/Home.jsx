@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux"; //讀取Redux的全局狀態和改變狀態的方法
+import { toggleTheme } from "../../store/themeSlice";
 import "./Home.scss";
 import backgroundImg1 from "/images/日本櫻花.jpg";
 import backgroundImg2 from "/images/大阪街頭.jpg";
@@ -8,6 +10,9 @@ const Home = () => {
   const [imageIndex, setImageIndex] = useState(0);
   // 創建一個陣列，包含三張背景圖片的路徑，每三秒切換一次背景圖片
   const backgroundImgs = [backgroundImg1, backgroundImg2, backgroundImg3];
+
+  // 取得 Redux 中的 themeSlice 的狀態
+  const isDarkTheme = useSelector((state) => state.themeSlice.isDarkTheme);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,7 +39,11 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="play-theme">
+      <section
+        className={`play-theme ${
+          isDarkTheme ? "play-theme-dark" : "play-theme-light"
+        }`}
+      >
         <div className="theme-title">
           <p>遊玩主題</p>
         </div>
@@ -64,7 +73,11 @@ const Home = () => {
       <section className="empty-container">
         <h3>今天就開始規劃行程，找到最適合的方案</h3>
       </section>
-      <section className="google-map">
+      <section
+        className={`google-map ${
+          isDarkTheme ? "google-map-dark" : "google-map-light"
+        }`}
+      >
         <div className="location-title">
           <h3>日本地理位置</h3>
           <p>

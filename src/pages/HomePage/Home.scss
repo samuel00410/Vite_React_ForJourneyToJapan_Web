@@ -36,7 +36,16 @@ section.slide-img {
 }
 // -- 遊玩主題介紹  --
 section.play-theme {
-  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  &.play-theme-dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+
+  &.play-theme-light {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
   padding: 1.5rem 1rem;
 
   div.theme-title {
@@ -90,8 +99,16 @@ section.empty-container {
 
 // -- 日本地理位置 --
 section.google-map {
+  transition: all 0.3s ease-in-out;
+  &.google-map-dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+  &.google-map-light {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
   min-height: 40vh;
-  background-color: #fff;
   div.location-title {
     display: flex;
     flex-direction: column;
