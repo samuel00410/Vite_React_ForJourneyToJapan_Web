@@ -40,19 +40,23 @@ const Home = () => {
         </div>
         <div className="circle-img">
           <div className="circle">
-            <img src="/images/北海道雪景.jpg" alt="" />
+            <img
+              title="北海道雪景"
+              src="/images/北海道雪景.jpg"
+              alt="北海道雪景"
+            />
             <p>北海道美景，美不勝收</p>
           </div>
           <div className="circle">
-            <img src="/images/日本壽司.jpg" alt="" />
+            <img title="日本壽司" src="/images/日本壽司.jpg" alt="日本壽司" />
             <p>日本道地壽司與美食</p>
           </div>
           <div className="circle">
-            <img src="/images/富士山.jpg" alt="" />
+            <img title="富士山" src="/images/富士山.jpg" alt="富士山" />
             <p>富士山風景與溫泉</p>
           </div>
           <div className="circle">
-            <img src="/images/清水寺.jpg" alt="" />
+            <img title="清水寺" src="/images/清水寺.jpg" alt="清水寺" />
             <p>京都清水寺，千年古都</p>
           </div>
         </div>
