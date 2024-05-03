@@ -6,6 +6,10 @@ header {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  box-shadow: 0 10px 6px -6px #777;
 
   div.left-part {
     // border: 2px solid red;
