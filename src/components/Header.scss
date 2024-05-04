@@ -72,6 +72,29 @@ header {
       }
     }
   }
+
+  div.changeTheme {
+    button {
+      padding: 0.25rem;
+      font-size: 0.75rem;
+      transition: all 0.2s ease-in-out;
+      border: none;
+      border-radius: 25px;
+      &.light-mode-button {
+        color: rgb(200, 217, 220);
+        background-color: rgba(10, 184, 187, 0.862);
+      }
+      &.dark-mode-button {
+        background-color: rgba(93, 73, 204, 0.915);
+      }
+
+      &:hover {
+        border: 1px solid black;
+        color: rgb(39, 223, 255);
+        background-color: rgba(26, 48, 210, 0.862);
+      }
+    }
+  }
 }
 
 // RWD設計 700大小以下的設計

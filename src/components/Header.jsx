@@ -68,7 +68,17 @@ const Header = () => {
         </div>
 
         <div className="changeTheme">
-          <button onClick={handleChangeTheme}>點我換主題顏色</button>
+          {isDarkTheme ? (
+            // 黑色主題時顯示切換明亮模式按鈕
+            <button className="light-mode-button" onClick={handleChangeTheme}>
+              切換明亮模式
+            </button>
+          ) : (
+            // 明亮主題時顯示切換暗色模式按鈕
+            <button className="dark-mode-button" onClick={handleChangeTheme}>
+              切換暗色模式
+            </button>
+          )}
         </div>
       </header>
     </>
