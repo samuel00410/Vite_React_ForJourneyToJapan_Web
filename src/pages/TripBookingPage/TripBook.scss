@@ -1,0 +1,17 @@
+section.tripbook-container {
+  min-height: 100vh;
+
+  table.trip-table {
+    border: 1px solid #000;
+    tr {
+      th {
+        border: 1px solid #000;
+        padding: 10px;
+      }
+      td {
+        border: 1px solid #000;
+        padding: 10px;
+      }
+    }
+  }
+}

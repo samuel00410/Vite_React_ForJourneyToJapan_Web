@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/Layout";
 // 頁面組件
+import Layout from "./components/Layout";
 import Home from "./pages/HomePage/Home";
+import TripBook from "./pages/TripBookingPage/TripBook";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/booking" element={<TripBook />} />
         </Route>
       </Routes>
     </BrowserRouter>
