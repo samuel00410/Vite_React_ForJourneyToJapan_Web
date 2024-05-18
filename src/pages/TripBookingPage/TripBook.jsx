@@ -1,6 +1,7 @@
 import React from "react";
 import "./TripBook.scss";
 import Test from "../Test";
+import OpenAI from "openai";
 
 // 測試用陣列
 let testArray = [
