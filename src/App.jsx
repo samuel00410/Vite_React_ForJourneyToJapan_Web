@@ -5,6 +5,7 @@ import "./App.css";
 import Layout from "./components/Layout";
 import Home from "./pages/HomePage/Home";
 import TripBook from "./pages/TripBookingPage/TripBook";
+import Travel from "./pages/TravelPage/Travel";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/booking" element={<TripBook />} />
+          <Route path="/travel" element={<Travel />} />
         </Route>
       </Routes>
     </BrowserRouter>
