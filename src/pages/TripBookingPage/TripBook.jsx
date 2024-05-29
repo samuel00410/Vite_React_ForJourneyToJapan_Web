@@ -1,50 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./TripBook.scss";
 import Test from "../Test";
-
-// 測試用陣列
-let testArray = [
-  {
-    name: "employee1",
-    age: "26",
-  },
-  {
-    name: "employee2",
-    age: "29",
-  },
-  {
-    name: "employee3",
-    age: "34",
-  },
-];
+import OpenAI from "openai";
+import img1 from "/images/富士山.png";
 
 const TripBook = () => {
-  console.log(import.meta.env.VITE_API_KEY);
+  const [count, setCount] = useState(0);
+  const [data, setData] = useState({ name: "Alice" });
+
+  useEffect(() => {
+    console.log("執行useEffect...");
+  }, [data]); // data 是对象，引用在每次渲染时都会变化
 
   return (
-    <>
-      <section className="tripbook-container">
-        <table className="trip-table">
-          <thead>
-            <tr>
-              <th>姓名</th>
-              <th>年齡</th>
-            </tr>
-          </thead>
-          <tbody>
-            {testArray.map((data, index) => {
-              return (
-                <tr key={index}>
-                  <td>{data.name}</td>
-                  <td>{data.age}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-        <Test word={"Hi"} />
-      </section>
-    </>
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>增加Count按鈕</button>
+      <button onClick={() => setData({ name: "Alice" })}>更新data按鈕</button>
+    </div>
   );
 };
 
