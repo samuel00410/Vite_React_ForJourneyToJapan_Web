@@ -34,7 +34,7 @@ const Header = () => {
               <li>
                 <Link
                   className={isDarkTheme ? "link-dark" : "link-light"}
-                  to="#"
+                  to="/travel"
                 >
                   <i className="fa-solid fa-plane"></i> 日本旅遊
                 </Link>
