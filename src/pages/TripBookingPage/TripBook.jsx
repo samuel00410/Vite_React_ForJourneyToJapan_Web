@@ -19,6 +19,8 @@ let testArray = [
 ];
 
 const TripBook = () => {
+  console.log(import.meta.env.VITE_API_KEY);
+
   return (
     <>
       <section className="tripbook-container">
